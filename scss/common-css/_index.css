@@ -1,0 +1,84 @@
+.header {
+    background-color: #fcc425;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.agent-info {
+    color: mediumblue;
+}
+
+.agent-info h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.agent-info .email,
+.mob {
+    color: b;
+    font-size: 20px;
+}
+
+.services-info {
+    background-color: #f7f7f7;
+    padding-block: 11px;
+}
+
+.services-info .services-available {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+
+.services-info .services-available .service {
+    background-color: mediumblue;
+    padding: 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.services-info .services-available .service:hover {
+    color: black;
+    background-color: #fcc425;
+}
+
+footer {
+    background-color: #2d4f8e;
+}
+
+.contact-details {
+    color: #f7f7f7;
+    padding: 80px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-details h3 {
+    font-size: 40px;
+    /* padding-block: 20px; */
+}
+
+.contact-details p {
+    font-size: 30px;
+    padding-block: 20px;
+}
+
+.contact-details a {
+    color: #fcc425;
+    text-decoration: none;
+}
+
+h1 {
+    color: red;
+    font-size: 25px;
+}
