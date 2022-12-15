@@ -6,7 +6,7 @@ body {
     .header {
         flex-direction: column;
         text-align: center;
-        padding: 0px;
+        padding: 0px !important;
     }
 
     .header img {
