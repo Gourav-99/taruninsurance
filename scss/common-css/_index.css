@@ -19,8 +19,14 @@ body {
         padding: 10px;
     }
 
+    .agent-info .email,
+    .mob,
+    h2 {
+        font-size: 21px !important;
+    }
+
     .services-info {
-        padding-block: 0;
+        padding-block: 10px !important;
     }
 
     .services-info .heading {
@@ -33,7 +39,7 @@ body {
 
     .services-info .services-available .service {
         width: 100% !important;
-        padding: 10px !important;
+        padding: 7px !important;
         margin: 5px 10px !important;
         font-size: 15px !important;
     }
@@ -66,7 +72,6 @@ body {
 
 .agent-info .email,
 .mob {
-    color: b;
     font-size: 20px;
 }
 
