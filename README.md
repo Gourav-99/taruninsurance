@@ -1,2 +1,0 @@
-# taruninsurance
-Insurance advisor
