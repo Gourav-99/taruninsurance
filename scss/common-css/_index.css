@@ -52,6 +52,10 @@ body {
     p {
         font-size: 25px !important;
     }
+
+    .contact-details p {
+        padding-block: 10px !important;
+    }
 }
 
 .header {
