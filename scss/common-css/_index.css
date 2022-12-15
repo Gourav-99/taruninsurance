@@ -1,12 +1,62 @@
+body {
+    background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .header img {
+        padding: 15px 10px;
+    }
+
+    .header .agent-info {
+        background-color: brown;
+        color: #f7f7f7;
+        padding: 10px;
+    }
+
+    .services-info {
+        padding-block: 0;
+    }
+
+    .services-info .heading {
+        font-size: 16px;
+    }
+
+    .services-info .services-available {
+        padding: 0 !important;
+    }
+
+    .services-info .services-available .service {
+        width: 100% !important;
+        padding: 10px !important;
+        margin: 5px 10px !important;
+        font-size: 15px !important;
+    }
+
+    .contact-details {
+        padding: 10px !important;
+    }
+
+    .contact-details h3,
+    p {
+        font-size: 25px !important;
+    }
+}
+
 .header {
     background-color: #fcc425;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    padding: 20px;
+    justify-content: space-between;
 }
 
 .agent-info {
-    color: mediumblue;
+    color: #00529c;
 }
 
 .agent-info h2 {
@@ -21,8 +71,15 @@
 }
 
 .services-info {
-    background-color: #f7f7f7;
-    padding-block: 11px;
+    padding-block: 20px;
+}
+
+.services-info .heading {
+    font-size: 24px;
+    text-align: center;
+    color: #c02222;
+    font-weight: bold;
+    padding: 10px;
 }
 
 .services-info .services-available {
@@ -30,14 +87,14 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
     padding: 10px;
     margin: auto;
 }
 
 .services-info .services-available .service {
-    background-color: mediumblue;
-    padding: 35px;
+    width: 25%;
+    background-color: #00529c;
+    padding: 25px;
     margin: 10px;
     font-size: 18px;
     font-weight: bold;
@@ -51,21 +108,22 @@
 
 footer {
     background-color: #2d4f8e;
+    position: absolute;
+    bottom: 0;
 }
 
 .contact-details {
     color: #f7f7f7;
-    padding: 80px;
-    width: 80%;
+    padding: 60px 0;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 
 .contact-details h3 {
     font-size: 40px;
-    /* padding-block: 20px; */
 }
 
 .contact-details p {
@@ -73,7 +131,8 @@ footer {
     padding-block: 20px;
 }
 
-.contact-details a {
+.contact-details .mob-number {
+    display: inline-block;
     color: #fcc425;
     text-decoration: none;
 }
