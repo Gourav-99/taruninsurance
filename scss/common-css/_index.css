@@ -54,7 +54,7 @@ body {
     }
 
     .contact-details p {
-        padding-block: 10px;
+        padding-block: 10px !important;
     }
 }
 
