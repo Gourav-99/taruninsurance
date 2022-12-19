@@ -33,7 +33,7 @@ enquiryForm.addEventListener("submit", () => {
         enquiry: message
     }
     Email.send({
-        SecureToken: "660fa8fb-7c02-4776-a51a-1ee72cdf645b",
+        SecureToken: "a69e3826-070f-4ad3-bd1d-b72e42ae9990",
         To: 'goupg1999@gmail.com',
         From: email,
         Subject: "Enquiry regarding insurance",
