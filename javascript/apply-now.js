@@ -34,8 +34,9 @@ enquiryForm.addEventListener("submit", () => {
     }
     // 34c5e604-6e9d-4071-97cd-106ba80fee94 smtpjs app
     // 925cbd40-cd1c-46c3-9cc1-04424ed0ad9b windosphone
+    // 4865a64e-44b0-4502-94b9-1c0595db0915 netlify app
     Email.send({
-        SecureToken: "34c5e604-6e9d-4071-97cd-106ba80fee94",
+        SecureToken: "4865a64e-44b0-4502-94b9-1c0595db0915",
         To: 'goupg1999@gmail.com',
         From: email,
         Subject: "Enquiry regarding insurance",
