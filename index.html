@@ -11,18 +11,24 @@
 
 <body>
     <div class="container">
-        <header class="header">
+        <div class="headline">
+            <marquee behavior="" direction="">
+                <p class="headline-notification">India’s Largest Public Sector Finance & Insurance Company Presents:-
+                </p>
+            </marquee>
+        </div>
+        <div class="header">
             <div class="image">
                 <img src="lichfl-logo.png" alt="LIC Housing Finance">
             </div>
-            <div class="agent-info">
+            <div class="agent-info xs-hide">
                 <h2>Tarun Bharti Goswami</h2>
                 <p class="email">btarun02@gmail.com</p>
                 <p class="mob">+ 91- 9413208855</p>
             </div>
-        </header>
+        </div>
         <div class="services-info">
-            <p class="heading">Services Available</p>
+            <p class="heading">Home Loans and Insurance</p>
             <ul class="services-available">
                 <li class="service">* Home Loans *</li>
                 <li class="service">* Life Insurance *</li>
@@ -35,16 +41,49 @@
                 <li class="service">* Property Sale – Purchase *</li>
                 <li class="service">* Total Financial Security *</li>
             </ul>
+            <button class="apply-btn btn">Apply Now</button>
         </div>
-        <footer>
+        <div class="footer">
             <div class="contact-details">
                 <h3>For Enquiry Dial:<p class="mob-number"> + 91- 9413208855</p>
                 </h3>
                 <p>Tarun B. Goswami - 64, E-Block , Behind Nagda Petrol Pump, Pratap Nagar, Udaipur (Rajasthan)-313001
                 </p>
             </div>
-        </footer>
+        </div>
     </div>
+    <div class="enqiry-form-block">
+        <div class="modal-popup-main">
+            <div class="enquiry-heading">
+                <h3 class="heading">ENQUIRY FORM</h3>
+                <p class="sub-heading xs-hide">If you have any queries kindly take a moment to fill up this form, we
+                    will
+                    contact you shorly.</p>
+                <div class="close-btn">X</div>
+            </div>
+            <form action="#" class="modal-popup enquiry-form">
+                <div class="form-fields">
+                    <input type="text" id="name" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="form-fields">
+                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-fields">
+                    <input type="text" id="phone" class="form-control" placeholder="Phone Number" required>
+                </div>
+
+                <div class="form-fields">
+                    <textarea id="message" cols="25" rows="5" class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div class="text-end">
+                    <button type="submit" class="btn btn-primary apply">Submit</button>
+                    <button type="button" class="btn btn-danger">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="javascript/apply-now.js"></script>
 </body>
 
 </html>
