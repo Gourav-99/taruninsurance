@@ -22,7 +22,7 @@ closeModalPupup = () => {
     body.classList.toggle('overflow');
 }
 validatePhoneNumber = (input_str) => {
-    var re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    var re = /^\+(?:[0-9] ?){6,14}[0-9]$/;;
     return re.test(input_str);
 }
 enquiryForm.addEventListener("submit", () => {
