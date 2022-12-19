@@ -22,7 +22,9 @@ closeModalPupup = () => {
     body.classList.toggle('overflow');
 }
 validatePhoneNumber = (input_str) => {
-    var re = /^\+(?:[0-9] ?){6,14}[0-9]$/;;
+    var re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    // /^\+(?:[0-9] ?){6,14}[0-9]$/
+    // /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
     return re.test(input_str);
 }
 enquiryForm.addEventListener("submit", () => {
@@ -41,6 +43,6 @@ enquiryForm.addEventListener("submit", () => {
             mobile_number: phone,
             message: message
         }
-        emailjs.send("service_ahpu3jj", "template_kwkp4nc", response).then(res => alert("Thank you for showing intrest. You will be contacted soon :)")).then(() => closeModalPupup()).catch(err => console.log(err))
+        emailjs.send("service_p5aa6hm", "template_ly93ygn", response).then(res => alert("Thank you for showing intrest. You will be contacted soon :)")).then(() => closeModalPupup()).catch(err => console.log(err))
     }
 })
