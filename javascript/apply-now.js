@@ -32,8 +32,10 @@ enquiryForm.addEventListener("submit", () => {
         phone: phone,
         enquiry: message
     }
+    // 34c5e604-6e9d-4071-97cd-106ba80fee94 smtpjs app
+    // 925cbd40-cd1c-46c3-9cc1-04424ed0ad9b windosphone
     Email.send({
-        SecureToken: "925cbd40-cd1c-46c3-9cc1-04424ed0ad9b",
+        SecureToken: "34c5e604-6e9d-4071-97cd-106ba80fee94",
         To: 'goupg1999@gmail.com',
         From: email,
         Subject: "Enquiry regarding insurance",
