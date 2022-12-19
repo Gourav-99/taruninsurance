@@ -6,15 +6,24 @@ body {
     display: block !important;
 }
 
+.xs-mobile-show {
+    display: none !important;
+}
 
 @media screen and (max-width: 767px) {
-    .xs-hide {
-        display: none;
+
+    .xs-hide,
+    .xs-mobile-hide {
+        display: none !important;
+    }
+
+    .xs-mobile-show {
+        display: block !important;
     }
 
     .header {
-        flex-direction: column;
         text-align: center;
+        justify-content: space-around !important;
         padding: 0px !important;
     }
 
@@ -22,10 +31,11 @@ body {
         padding: 15px 10px;
     }
 
-    .header .agent-info {
+    .agent-info {
         background-color: brown;
         color: #f7f7f7;
-        padding: 10px;
+        padding: 4px;
+        text-align: center;
     }
 
     .agent-info .email,
@@ -40,6 +50,7 @@ body {
 
     .services-info .heading {
         font-size: 16px;
+        padding: 5px !important;
     }
 
     .services-info .services-available {
@@ -73,7 +84,7 @@ body {
 }
 
 .headline {
-    padding: 5px;
+    padding: 2px;
     background: linear-gradient(to bottom, rgba(117, 194, 215, 1) 0%, rgba(10, 77, 131, 1) 100%);
 }
 
@@ -84,7 +95,7 @@ body {
 }
 
 .header {
-    background-color: #fcc425;
+    background-color: #cecece;
     display: flex;
     padding: 20px;
     justify-content: space-between;
@@ -179,6 +190,7 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
 }
@@ -189,7 +201,7 @@ body {
 
 .contact-details p {
     font-size: 30px;
-    padding-block: 20px;
+    padding-block: 10px;
 }
 
 .contact-details .mob-number {
