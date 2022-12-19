@@ -4,44 +4,43 @@ let enquiryModal = document.querySelector(".enqiry-form-block");
 let body = document.querySelector('body');
 let closeBtn = document.querySelector(".close-btn");
 applyBtn.addEventListener("click", () => {
-    enquiryModal.classList.toggle('xs-show');
-    body.classList.toggle('overflow');
+    closeModalPupup();
 })
 closeBtn.addEventListener("click", () => {
-    enquiryModal.classList.toggle('xs-show');
-    body.classList.toggle('overflow');
+    closeModalPupup();
 })
 body.addEventListener("click", e => {
-    console.log(e.target);
     if (e.target === enquiryModal) {
-        enquiryModal.classList.toggle('xs-show');
-        body.classList.toggle('overflow');
+        closeModalPupup();
     }
 })
 document.querySelector(".btn-danger").addEventListener("click", () => {
     enquiryForm.reset();
 })
+closeModalPupup = () => {
+    enquiryModal.classList.toggle('xs-show');
+    body.classList.toggle('overflow');
+}
+validatePhoneNumber = (input_str) => {
+    var re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    return re.test(input_str);
+}
 enquiryForm.addEventListener("submit", () => {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let phone = document.getElementById("phone").value;
     let message = document.getElementById("message").value;
-    let response = {
-        name: name,
-        email: email,
-        phone: phone,
-        enquiry: message
+    if (!validatePhoneNumber(phone)) {
+        alert("!Please enter a valid phone number");
+        phone = '';
+        document.getElementById("phone").focus();
+    } else {
+        let response = {
+            from_name: name,
+            email_id: email,
+            mobile_number: phone,
+            message: message
+        }
+        emailjs.send("service_ahpu3jj", "template_kwkp4nc", response).then(res => alert("Thank you for showing intrest. You will be contacted soon :)")).then(() => closeModalPupup()).catch(err => console.log(err))
     }
-    // 34c5e604-6e9d-4071-97cd-106ba80fee94 smtpjs app
-    // 925cbd40-cd1c-46c3-9cc1-04424ed0ad9b windosphone
-    // 4865a64e-44b0-4502-94b9-1c0595db0915 netlify app
-    Email.send({
-        SecureToken: "4865a64e-44b0-4502-94b9-1c0595db0915",
-        To: 'goupg1999@gmail.com',
-        From: email,
-        Subject: "Enquiry regarding insurance",
-        Body: response
-    }).then(
-        res => alert("Thank you for showing intrest. You will be contacted soon :)")
-    );
 })

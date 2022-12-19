@@ -69,7 +69,7 @@
                     <input type="email" id="email" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="form-fields">
-                    <input type="text" id="phone" class="form-control" placeholder="Phone Number" required>
+                    <input type="number" id="phone" class="form-control" placeholder="Phone Number" required>
                 </div>
 
                 <div class="form-fields">
@@ -82,7 +82,14 @@
             </form>
         </div>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("cRVNwAnG9uuw_KifV");
+        })();
+    </script>
     <script src="javascript/apply-now.js"></script>
 </body>
 
